@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Ivey's Personal Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="main.html"><img src="cat.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="https://www.facebook.com/iveyjane.botinbon" target="_blank">FACEBOOK</a></li>
+                        <li><a href="https://instagram.com/beja_ne?igshid=MzRlODBiNWFlZA==" target="_blank">INSTAGRAM</a></li>
+                        <li><a href="main.html">CLICK ME</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Ivey Jane B. Bon</h1>
+        </section>
+        <section class ="course">
+            <h1>College Enrolled</h1>
+            <p>Known to be a world class university located at Bicol, Philippines.</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Mission</h3>
+                    <p>The Bicol University shall give professional and technical training, and provide advanced and specialized instruction in literature, philosophy, the sciences and technological researches(RA 552, Sec. 3.0)</p>
+                </div>
+                <div class="course-col">
+                    <h3>BICOL UNIVERSITY</h3>
+                    <p>The premier state university in Bicol region founded on June 21, 1969 through the passage of RA 5521. As an institution promoting Scholarship, Leadership, Character, and Service as its core values.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Vision</h3>
+                    <p>A University for Humanity characterized by productive scholarship, transformative leadership, collaborative service, and distinctive character for sustainable societies.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>

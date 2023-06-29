@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'cinzel';
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(bb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+  }
+  h1{
+    font-weight: normal;
+    font-size: 60px;
+  }
+  .countdown{
+    display: flex;
+    transform: scale(2);
+  }
+  .time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+  .time h2{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0 0 5px;
+    line-height: 1;
+  }
+  
+  /* MEDIA QUARRIES */
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 30px;
+    }
+  
+    .countdown {
+      transform: scale(1);
+    }
+  
+    .time {
+      margin: 10px;
+    }
+  
+    .time h2 {
+      font-size: 25px;
+    }
+  }
